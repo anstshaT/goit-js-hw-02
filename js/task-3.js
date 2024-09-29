@@ -1,6 +1,6 @@
 function checkForSpam(message) {
-    let updateMessage = message.toUpperCase();
-    if (updateMessage.includes("SPAN") || updateMessage.includes("SALE")) {
+    let updateMessage = message.toLowerCase();
+    if (updateMessage.includes("spam") || updateMessage.includes("sale")) {
         return true;
     } else {
         return false;
